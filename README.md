@@ -64,14 +64,14 @@ plateforme_sante/
 
 | # | Module | Type | Route | Fichiers dédiés au membre | Branche Git | Responsable |
 |---|---|---|---|---|---|---|
-| M1 | Cliniques et centres de vaccination | Localisation (p-médian) | `/m1` | `modules/m1_cliniques.py`, `routes/m1_routes.py`, `templates/m1_cliniques.html`, `tests/test_m1_cliniques.py` | `m1-cliniques` | À assigner |
-| M2 | Emplacement des ambulances | Localisation (Couv. max) | `/m2` | `modules/m2_ambulances.py`, `routes/m2_routes.py`, `templates/m2_ambulances.html`, `tests/test_m2_ambulances.py` | `m2-ambulances` | À assigner |
-| M3 | Tournées d'ambulances | Routage (VRP urgences) | `/m3` | `modules/m3_tournees_amb.py`, `routes/m3_routes.py`, `templates/m3_tournees_amb.html`, `tests/test_m3_tournees_amb.py` | `m3-tournees-amb` | À assigner |
-| M4 | Tournées d'infirmiers à domicile | Routage (CVRPTW) | `/m4` | `modules/m4_infirmiers.py`, `routes/m4_routes.py`, `templates/m4_infirmiers.html`, `tests/test_m4_infirmiers.py` | `m4-infirmiers` | À assigner |
-| M5 | Planning des blocs opératoires | Ordonnancement | `/m5` | `modules/m5_blocs.py`, `routes/m5_routes.py`, `templates/m5_blocs.html`, `tests/test_m5_blocs.py` | `m5-blocs` | À assigner |
-| M6 | Planning du personnel | Ordonnancement (Rostering) | `/m6` | `modules/m6_personnel.py`, `routes/m6_routes.py`, `templates/m6_personnel.html`, `tests/test_m6_personnel.py` | `m6-personnel` | À assigner |
-| M7 | Affectation des patients aux lits | Optimisation (Affectation) | `/m7` | `modules/m7_lits.py`, `routes/m7_routes.py`, `templates/m7_lits.html`, `tests/test_m7_lits.py` | `m7-lits` | À assigner |
-| M8 | Budget et achats de médicaments | Optimisation (PL) | `/m8` | `modules/m8_budget.py`, `routes/m8_routes.py`, `templates/m8_budget.html`, `tests/test_m8_budget.py` | `m8-budget` | À assigner |
+| M1 | Cliniques et centres de vaccination | Localisation (p-médian) | `/m1` | `modules/m1_cliniques.py`, `routes/m1_routes.py`, `templates/m1_cliniques.html`, `tests/test_m1_cliniques.py` | `m1_cliniques` | À assigner |
+| M2 | Emplacement des ambulances | Localisation (Couv. max) | `/m2` | `modules/m2_ambulances.py`, `routes/m2_routes.py`, `templates/m2_ambulances.html`, `tests/test_m2_ambulances.py` | `m2_ambulances` | À assigner |
+| M3 | Tournées d'ambulances | Routage (VRP urgences) | `/m3` | `modules/m3_tournees_amb.py`, `routes/m3_routes.py`, `templates/m3_tournees_amb.html`, `tests/test_m3_tournees_amb.py` | `m3_tournees_amb` | À assigner |
+| M4 | Tournées d'infirmiers à domicile | Routage (CVRPTW) | `/m4` | `modules/m4_infirmiers.py`, `routes/m4_routes.py`, `templates/m4_infirmiers.html`, `tests/test_m4_infirmiers.py` | `m4_infirmiers` | À assigner |
+| M5 | Planning des blocs opératoires | Ordonnancement | `/m5` | `modules/m5_blocs.py`, `routes/m5_routes.py`, `templates/m5_blocs.html`, `tests/test_m5_blocs.py` | `m5_blocs` | À assigner |
+| M6 | Planning du personnel | Ordonnancement (Rostering) | `/m6` | `modules/m6_personnel.py`, `routes/m6_routes.py`, `templates/m6_personnel.html`, `tests/test_m6_personnel.py` | `m6_personnel` | À assigner |
+| M7 | Affectation des patients aux lits | Optimisation (Affectation) | `/m7` | `modules/m7_lits.py`, `routes/m7_routes.py`, `templates/m7_lits.html`, `tests/test_m7_lits.py` | `m7_lits` | À assigner |
+| M8 | Budget et achats de médicaments | Optimisation (PL) | `/m8` | `modules/m8_budget.py`, `routes/m8_routes.py`, `templates/m8_budget.html`, `tests/test_m8_budget.py` | `m8_budget` | À assigner |
 
 ---
 
@@ -135,7 +135,7 @@ def solve(data: dict, params: dict) -> dict:
 
 ## Règles de travail Git
 
-1. **Une branche par module** (ex. `git checkout -b m1-cliniques`). Ne jamais pousser directement sur `main`.
+1. **Une branche par module** (ex. `git checkout -b m1_cliniques`). Ne jamais pousser directement sur `main`.
 2. **La branche `main` doit toujours fonctionner.**
 3. **Pull Request obligatoire** : fusion dans `main` uniquement après relecture par au moins un autre membre.
 4. **Ne pas modifier `app.py`, `templates/base.html`, `templates/index.html` ni `data/`** sans prévenir toute l'équipe.

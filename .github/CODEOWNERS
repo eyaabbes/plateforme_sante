@@ -1,0 +1,15 @@
+# Les fichiers communs nécessitent obligatoirement une revue du propriétaire.
+/app.py @ibgdev
+/routes/__init__.py @ibgdev
+/templates/base.html @ibgdev
+/templates/index.html @ibgdev
+/static/css/style.css @ibgdev
+/static/js/main.js @ibgdev
+/data/ @ibgdev
+/requirements.txt @ibgdev
+/.gitignore @ibgdev
+/README.md @ibgdev
+/AGENTS.md @ibgdev
+/CLAUDE.md @ibgdev
+/GEMINI.md @ibgdev
+/.github/ @ibgdev
