@@ -1,0 +1,83 @@
+/* Feuille de style de base — Squelette de l'architecture web Flask */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f6f8fa;
+    color: #1f2937;
+    line-height: 1.5;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem 1.5rem;
+    background-color: #155e75;
+    color: #ffffff;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.navbar .brand {
+    font-weight: 700;
+    margin-left: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.25rem;
+}
+
+.hero {
+    margin-bottom: 1.75rem;
+}
+
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.module-card {
+    display: block;
+    padding: 1.25rem;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.module-card:hover {
+    border-color: #155e75;
+}
+
+.module-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    margin-bottom: 0.5rem;
+    background: #e0f2fe;
+    color: #0369a1;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.module-zone {
+    margin-top: 1.25rem;
+    padding: 1rem;
+    background: #ffffff;
+    border: 1px dashed #cbd5e1;
+    border-radius: 8px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Plateforme Santé Régionale — RO{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header class="navbar">
+        <a class="brand" href="{{ url_for('index') }}">Plateforme Santé RO</a>
+        <nav class="nav-links">
+            <a href="{{ url_for('index') }}">Accueil</a>
+            <a href="{{ url_for('m1.page_m1') }}">M1</a>
+            <a href="{{ url_for('m2.page_m2') }}">M2</a>
+            <a href="{{ url_for('m3.page_m3') }}">M3</a>
+            <a href="{{ url_for('m4.page_m4') }}">M4</a>
+            <a href="{{ url_for('m5.page_m5') }}">M5</a>
+            <a href="{{ url_for('m6.page_m6') }}">M6</a>
+            <a href="{{ url_for('m7.page_m7') }}">M7</a>
+            <a href="{{ url_for('m8.page_m8') }}">M8</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

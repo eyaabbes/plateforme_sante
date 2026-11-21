@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Accueil — Plateforme Santé Régionale (RO){% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Plateforme d'aide à la décision — Système de santé régional</h1>
+    <p>Accès centralisé aux 8 modules de Recherche Opérationnelle (M1 à M8).</p>
+</section>
+
+<section class="modules-grid">
+    {% for module in modules %}
+    <a class="module-card" href="{{ module.url }}/">
+        <span class="module-badge">{{ module.id }}</span>
+        <h2>{{ module.titre }}</h2>
+        <p>{{ module.type }}</p>
+    </a>
+    {% endfor %}
+</section>
+{% endblock %}
